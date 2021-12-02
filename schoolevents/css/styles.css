@@ -1,0 +1,48 @@
+/*
+Team Members: Peter Pfisterer, Yobani
+Date: 12/2/2021
+File Name: styles.css
+*/
+
+footer{
+position:fixed;
+bottom:0;
+width: 100%;
+}
+
+.form1{
+width:80%;
+margin-left:auto;
+margin-right:auto;
+}
+
+.bg-red {
+    background-color: #780001;
+}
+
+.bg-light-blue {
+     background-color: #ccd5e6;   
+}
+
+/* Show mobile class, hide tablet-desktop class and menu-links id */
+.mobile {
+    display: block;
+}
+
+.tablet-desktop {
+    display: none;
+}
+
+/* Media Query for Tablet Viewport */
+@media (min-width: 768px) {  
+
+    /* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+    .tablet-desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+    
+}
