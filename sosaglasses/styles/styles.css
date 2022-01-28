@@ -1,0 +1,155 @@
+/*Element styles*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*Video ideas found on startbootstrap.com*/
+header {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  header .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+
+  nav{
+    min-height:12vh;
+  }
+
+  main {
+      min-height: 88vh;
+      background-image: linear-gradient(rgba(63, 63, 63, 0.7),
+      rgba(255, 255, 255, .3)), url(../media/chicago.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      background-size: 200%;
+  }
+
+  footer{
+    width:100%;
+    height: 12vh;
+  }
+
+ /*Class styles*/
+ .enterButton {
+     display: inline-block;
+    transition: transform .3s ease-in-out;
+ }
+ .enterButton:hover {
+     transform:rotate(90deg);
+ }
+
+ .rounder{
+   border-radius:20px;
+ }
+
+ .error{
+   color:rgb(255, 83, 83);
+ }
+
+ .faq{
+   background-image: linear-gradient(rgba(63, 63, 63, 0.7),
+   rgba(255, 255, 255, 0.3));
+   min-height: 76vh;
+ }
+ 
+ .contact{
+  background-image: linear-gradient(rgba(63, 63, 63, 0.7),
+   rgba(255, 255, 255, 0.3));
+   min-height: 76vh;
+ }
+
+ .accordion{
+  background-color:rgb(99, 99, 99);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+ }
+
+ .active, .accordion:hover {
+   background-color: rgb(143, 142, 142);
+ }
+
+ .panel {
+   padding: 0 18px;
+   background-color: rgb(255, 255, 255);
+   display: none;
+   overflow: hidden;
+ }
+
+ .accordion:after {
+  content: '\02795'; 
+  font-size: 13px;
+  color: rgb(61, 61, 61);
+  float: right;
+  margin-left: 5px;
+}
+
+.accordion.active:after {
+  content: "\2796"; 
+}
+
+
+/*ID Styles*/
+#muteButton{
+  display: none;
+}
+
+#emptyNameBox{
+  display: none;
+  color: red;
+}
+
+#emptyEmailBox{
+  display: none;
+  color: red;
+}
+
+#noMatch{
+  display: none;
+  color: red;
+}
+
+#success{
+  display: none;
+}
+
+
