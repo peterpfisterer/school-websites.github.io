@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+	  <meta name="description" content="About Sosa Glasses">
+    <meta name="keywords" content="Sunglasses, Sun, Lense, Designer, Glasses">
+    <meta name="author" content="Peter Pfisterer">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- My Styles-->
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+   <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>Contact | Sosa Glasses</title>
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="scrollTo1">
+        <a class="navbar-brand ml-5" href="index.html">Sosa Glasses</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto mr-5">
+            <li class="nav-item mr-5">
+                <a class="nav-link" href="index.html#scrollTo1">Home</a>
+              </li>
+            <li class="nav-item mr-5">
+                <a class="nav-link" href="catalog.html">Buy</a>
+              </li>
+            <li class="nav-item mr-5">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item mr-5">
+              <a class="nav-link" href="FAQ.html">FAQ</a>
+            </li>
+            <li class="nav-item mr-5">
+              <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div> 
+      </nav>
+
+    <!--Main Content Area-->
+    <main class = "contact">
+      <div class = "row justify-content-center">
+        <div class = "col-8 bg-dark text-light mt-5 mb-5 pb-3 rounder text-md-center">
+          <h2 class = "m-2">Please fill out the form below and a customer service representitive will respond shortly:</h1>
+            <hr class="bg-light"><br>          
+            <form>
+              <label for="contactEmail1">Email Address:</label>&nbsp;&nbsp;&nbsp;
+              <input type="text" id="contactEmail1" placeholder="name@example.com">
+              <span id="errorEmail1" class="error">*</span>
+              <br>
+              <label for="contactEmail2">Confirm Email:</label>&nbsp;&nbsp;&nbsp;
+              <input type="text" id="contactEmail2" placeholder="name@example.com">
+              <span id="errorEmail2" class="error">*</span>
+              <br><br>
+              <label for="contactPhone">Mobile Phone:</label>&nbsp;&nbsp;&nbsp;
+              <input type="text" id="contactPhone" placeholder="1(123)456-7890">
+              <span id="errorPhone" class="error">*</span>
+              <br><br>
+              <label for="contactName">First Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="text" id="contactName">
+              <span id="errorName" class="error">*</span>
+              <br><br>
+              <!--Radio Buttons-->
+              <p>Select preferred method of contact: <span class="error">*</span></p>
+              <input type="radio" id="contactMethod1" name="contactMethod" value="email" checked>
+              <label for="contactMethod1">Email</label>
+              &nbsp;&nbsp;&nbsp;
+              <input type="radio" id="contactMethod2" name="contactMethod" value="text">
+              <label for="contactMethod2">Text</label>
+              &nbsp;&nbsp;&nbsp;
+              <input type="radio" id="contactMethod3" name="contactMethod" value="phone call">
+              <label for="contactMethod1">Call</label>
+              <br><br>
+              <!--Text Area-->
+              <label for="description">Why are you reaching out to us?</label>
+              <br>
+              <textarea id="description" name="description" rows="4" cols="30"> </textarea>
+              <br><br>
+              <button type="button" class="btn-sm btn-info text-light" id="submitButton">Submit</button>
+              <button type="button" class="btn-sm btn-dark text-light" id="clearButton">Clear</button>
+            </form>
+        </div>
+      </div>
+    </main>
+
+  <!--Footer-->
+      <footer class="bg-dark text-center text-light">
+        <p class="pt-4">&copy; Copyright 2022</p>
+      </footer>
+
+    <!--Scripts-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts/contactForm.js"></script>
+  </body>
+  </html>
