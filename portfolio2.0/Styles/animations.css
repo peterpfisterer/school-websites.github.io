@@ -1,0 +1,100 @@
+
+/* Styles */
+#submarine{
+    position:absolute;
+    left:0;
+    top:80%;
+    animation: drive 90s both infinite linear;
+}
+
+#bubble1{
+    position:absolute;
+    right: 10%;
+    animation: float1 7s both infinite linear;
+}
+#bubble2{
+    position:absolute;
+    right: 9%;   
+    animation: float1 10s both infinite linear;
+}
+#bubble3{
+    position:absolute;
+    right: 12%;  
+    animation: float1 5s both infinite linear;
+}
+
+
+#bubble4 {
+    position:absolute;
+    right: 5%;
+    bottom: 0;
+    animation: float2 10s both infinite linear;
+}
+
+#bubble5 {
+    position:absolute;
+    right: 10%;
+    bottom: 0%;
+    animation: float2 12s both infinite linear;
+}
+
+#bubble6 {
+    position:absolute;
+    right: 15%;
+    bottom: 0%;
+    animation: float2 17s both infinite linear;
+}
+
+#bubble7 {
+    position:absolute;
+    right: 17%;
+    bottom: 0%;
+    animation: float2 18s both infinite linear;
+}
+
+#bubble8 {
+    position:absolute;
+    left: 5%;
+    bottom: 0%;
+    animation: float2 11s both infinite linear;
+}
+
+#bubble9 {
+    position:absolute;
+    left: 10%;
+    bottom: 0%;
+    animation: float2 13s both infinite linear;
+}
+
+#bubble10 {
+    position:absolute;
+    left: 15%;
+    bottom: 0%;
+    animation: float2 14s both infinite linear;
+}
+
+#bubble11 {
+    position:absolute;
+    right: 17%;
+    bottom: 0%;
+    animation: float2 15s both infinite linear;
+}
+
+
+
+
+/* Animations */
+@keyframes drive{
+    from{ transform: translateX(-1000px)}
+    to{ transform: translateX(5000px)}
+}
+
+@keyframes float1{
+    from{ transform: translateY(0%)}
+    to{ transform: translateY(-1500%)}
+}
+
+@keyframes float2 {
+    from{ transform: translateY(100%)}
+    to{ transform: translateY(-5000%)}
+}

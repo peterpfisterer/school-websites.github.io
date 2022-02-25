@@ -1,0 +1,155 @@
+
+
+/* Colors */
+.bg-slategray {
+    background-color: #77878B;
+}
+
+.bg-darkslategray {
+    background-color: #305252;
+}
+
+.bg-onyx {
+    background-color: #373E40;
+}
+
+.bg-steelteal {
+    background-color: #488286;
+}
+
+.bg-powderblue {
+    background-color: #B7D5D4;
+}
+
+.text-slategray {
+    color: #77878B;
+}
+
+.text-darkslategray {
+    color: #305252;
+}
+
+
+
+/* Body Styles */
+
+body {
+    background-image: linear-gradient(to bottom, #488286, #305252);
+    overflow-x: hidden;
+}
+
+.long-column {
+    min-height: 80vh;
+}
+
+
+
+
+/* Jumbotron Styles */
+.jumbotron { 
+    background-color: rgb(1, 1, 1, .0) !important;
+    margin-left: 10%;
+    color:#B7D5D4;
+}
+
+
+
+/* Navbar Styles */
+.navbar{
+    min-height: 10vh;
+}
+d
+
+@keyframes nav_in {
+    from { color: #488286; }
+    to { color: #B7D5D4; }
+}
+
+@keyframes nav_out {
+    from { color: #B7D5D4; }
+    to { color: #488286; }
+}
+
+.navbar-brand {
+    animation: nav_out 1s;
+    color: #488286;
+}
+
+.navbar-brand:hover {
+    animation: nav_in 1s;
+    color: #B7D5D4;
+}
+
+.nav-link {
+    text-decoration: none;
+    animation: nav_out 1s;
+    color: #488286;
+}
+
+.nav-link:hover {
+    text-decoration: none;
+    animation: nav_in 1s;
+    color: #B7D5D4;
+}
+
+.navbar-toggler {
+    color: #488286;
+}
+
+
+
+/* Slideshow Styles */
+.slide_container {
+    height: 450px;
+}
+
+
+
+/* Footer Styles */
+.logo {
+    text-decoration: none;
+    color: #77878B;
+    animation: logo_out 1s;
+}
+
+.logo:hover{
+    animation: logo_in 1s;
+    color: #B7D5D4;
+}
+
+@keyframes logo_in {
+    from { color: #77878B; }
+    to { color: #B7D5D4; }
+}
+
+@keyframes logo_out{
+    from { color: #B7D5D4; }
+    to { color: #77878B; }
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 600px){
+    #submarine{
+        display: none;
+    }
+
+    #bubble4, #bubble5, #bubble6, #bubble7,
+    #bubble8, #bubble9, #bubble10, #bubble11{
+        display: none;
+    } 
+
+    html {
+        overflow-x: hidden;
+    }
+}
+
+
+
+/* Contact Form Styles */
+
+
+
+
+
+

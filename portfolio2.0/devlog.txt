@@ -1,0 +1,11 @@
+DEVELOPER LOG
+WEBSITE CREATED: 02/22/2023
+
+    -edit 02/22/2022:
+        I created the website using a color template I created. It has an ocean theme and I
+        used animations to express that. On this day I created the landing page, about page, and 
+        contact page.
+    
+    -edit 02/23/2022:
+        Added RegEx to my contact form and fixed some animation glitches. 
+    
