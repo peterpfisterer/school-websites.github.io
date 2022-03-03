@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&family=Raleway:wght@100;200;300;400&display=swap');
+
+
+/* Variables */
+:root {
+    /* Colors */
+    --brown-sugar: #BE6E46;
+    --tea-green: #CDE7B0;
+    --cambridge: #A3BFA8;
+    --shadow-blue: #7286A0;
+    --ebony: #59594A;
+
+    /* Fonts */
+    --font-family-raleway: 'Raleway', sans-serif;
+    --font-family-inconsolata: 'Inconsolata', sans-serif;
+}
+
+
+/* Styles */
+
+.html {
+    scroll-behavior: smooth;
+}
+
+.section-header {
+    height: 320px;
+    background: var(--shadow-blue);
+}
+
+.section-head {
+    font-family: var(--font-family-inconsolata);
+}
+
+.section-text {
+    font-family: var(--font-family-inconsolata);
+}
+
+.section-navbar {
+    background: var(--ebony);
+}
+
+.nav-link {
+    color:var(--cambridge);
+    font-family: var(--font-family-raleway);
+}
+
+.navbar-toggler {
+    color:var(--cambridge);
+}
+
+.navbar-brand {
+    font-family: var(--font-family-raleway);
+    color:var(--cambridge);
+}
+
+.nav-link:hover {
+    color:var(--tea-green);
+}
+
+.navbar-brand:hover {
+    color:var(--tea-green);
+}
+
+#article {
+    background: var(--brown-sugar);
+}
+
+#grid {
+    background: var(--tea-green);
+}
+
+#cards {
+    background: var(--cambridge);
+}
+
+#contact {
+    background: var(--shadow-blue);
+}
+
+
+.section-footer {
+    background: var(--ebony);
+    color: var(--cambridge);
+    font-family: var(--font-family-raleway);
+}
