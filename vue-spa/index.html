@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue SPA</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <style>
+        .navbar {
+            padding: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container" id="app">
+        <vue-nav></vue-nav>
+        <h1>{{title}}</h1>
+        <hr>
+        <app-pros></app-pros>
+        <vue-form></vue-form>
+        <form-controls></form-controls>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script>
+        //Vue
+        Vue.component('app-pros', {
+            data: function() {
+                return {
+                    benefits: [
+                    {pro: 'Vue is a progressive framework'},
+                    {pro: 'Vue is easy to learn'},
+                    {pro: 'Vue has easy to access functions'},
+                ]
+                };
+            },
+            template: `
+            <div>
+            <div class='benefits' v-for="pro in benefits">
+            <p>Benefit: {{ pro.pro }}</p>
+            </div>
+            </div>
+            `
+        });
+
+        Vue.component('vue-nav', {
+            data: function() {
+                return {
+                    sections: [
+                        {name: 'Home',
+                         link: '#home'},
+                        {name: 'Users',
+                         link: '#users'},
+                        {name: 'Contact',
+                         link: '#home'}
+                    ]
+                }
+            },
+            template: `
+            <nav class="navbar navbar-dark bg-dark">
+                <ul class="navbar-nav" v-for="section in sections">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">{{ section.name }}</a>
+                    </li>
+                </ul>
+            </nav>
+            `
+        });
+
+        Vue.component('vue-form', {
+            data: function() {
+                return {
+                    inputs: [
+                        {
+                            label: 'Name:',
+                            name: 'name'
+                        },
+                         {
+                             label: 'Email:',
+                             name: 'email'
+                         }
+                    ]
+                }
+            },
+            template: `
+            <form class="mt-5 pt-5 mb-3">
+                <h1>Vue Form</h1>
+                <div v-for="input in inputs">
+                    <label :for="input.name">{{ input.label }}</label>
+                    <input type="text" :id="input.name" :name="input.name">
+                    <p><br></p>
+                </div>
+            </form>           
+            `
+        });
+
+        Vue.component('form-controls', {
+            data: function() {
+                return {
+                    buttons: [
+                        {name: 'Clear',
+                         value:'clear-button',
+                         class: 'btn-sm btn-secondary'},
+                        {name: 'Submit',
+                         value:'submit-button',
+                         class: 'btn-sm btn-primary'}
+                    ]
+                }
+            },
+            template: `
+            <div>
+                    <button v-for="button in buttons"
+                            :class='button.class'
+                            :id='button.value'>
+                            {{ button.name }}
+                            </button>
+            </div>
+            `
+        });
+
+        new Vue({
+            el: '#app',
+            data: {
+                title: 'Pros to Using Vue:',
+            }
+        });
+
+        //scripts
+        $(document).ready( () => {
+            $('#clear-button').click( () => {
+                $('#name').val('');
+                $('#email').val('');
+            })
+            $('#submit-button').click( () => {
+                $('#name').val('');
+                $('#email').val('');
+                alert('Thank you for filling out my form.');
+            })
+        });
+    </script>
+</body>
+</html>
