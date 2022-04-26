@@ -1,0 +1,16 @@
+MODIFICATION LOG
+App Name: Fishing App Prototype
+Date Created: April 25th, 2022
+Creator: Peter Pfisterer
+
+04/25/2022
+    *Created App using Bootstrap
+    *Imported Google Maps API 
+    *Styled Google Maps API
+    *Created function to display user location marker
+    *Created function to display location markers from a seperate JSON file with location object array
+
+04/26/2022
+    *styled markers
+    *added loading screen
+    *added function to display marker data on click

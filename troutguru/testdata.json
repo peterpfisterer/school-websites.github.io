@@ -1,0 +1,34 @@
+{
+"locations": [
+    {
+        "name": "Owyhee River",
+        "latitude": 43.7916,
+        "longitude": -117.0532,
+        "rating": 5
+    },
+    {
+        "name": "Boise River Downtown",
+        "latitude": 43.6149,
+        "longitude": -116.2213,
+        "rating": 2
+    },
+    {
+        "name": "Boise River South Fork",
+        "latitude": 43.4991,
+        "longitude": -115.6930,
+        "rating": 4
+    },
+    {
+        "name": "Silver Creek",
+        "latitude": 44.343944,
+        "longitude": -115.7881,
+        "rating": 4.5
+    },
+    {
+        "name": "Louie Lake",
+        "latitude": 44.854494,
+        "longitude": -115.965542,
+        "rating": 5
+    }
+]
+}

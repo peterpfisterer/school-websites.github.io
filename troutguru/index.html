@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fishing</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  </head>
+  <body class="bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center" id="navbar">
+        <a class="navbar-brand display-1" href="#">TroutGuru</a>
+    </nav>
+
+    <!--Displays while maps is loading-->
+    <div id="loading" class="text-center">
+      <h1 class="display-3 text-light">Map Loading</h1>
+      <div class="lds-ripple"><div></div><div></div></div>
+      <p class="text-light">Thank you for visiting my app!</p>
+    </div>
+
+    <!--Map content-->
+    <div id="map"></div>
+
+    <footer class="footer bg-dark text-light text-center pt-5 pb-4" id="footer">
+      <p>Website created by: Peter Pfisterer</p>
+    </footer>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4msZ-k58D-zeNe3okCavuYPQ1Dd19Buc&callback=initMap"
+    async defer></script>
+    <script type="application/json" src="testdata.json"></script>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
