@@ -1,0 +1,39 @@
+﻿@model List<Disk>
+@{
+    ViewBag.Title = "Disks";
+}
+<h1 class="display-1">@ViewBag.Title</h1>
+<p class="lead">These are the disks in my inventory.</p><br>
+<p class="lead">Loaned out disks will have a borrower ID as the status.</p>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Disk ID</th>
+            <th>Name</th>
+            <th>Artist</th>
+            <th>Genre</th>
+            <th>Status</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var disk in Model)
+        {
+            <tr>
+                <td>@disk.DiskId</td>
+                <td>@disk.DiskName</td>
+                <td>@disk.ArtistId</td>
+                <td>@disk.GenreId</td>
+                    @if(disk.BorrowerId == null)
+                    {
+                        <td>In stock</td>
+                    } 
+                    else
+                    {
+                        <td>@disk.BorrowerId</td>
+                    }
+            </tr>
+        }
+    </tbody>
+</table>
